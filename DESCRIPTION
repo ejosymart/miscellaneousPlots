@@ -6,7 +6,7 @@ Author: c(person("Josymar", "Torrejon-Magallanes", role = c("aut", "cre"), email
 Maintainer: Josymar Torrejon-Magallanes <ejosymart@gmail.com>
 Description: Build non common plots: equations, flow charts, etc, related to stock assessment, populations dynamics and management strategy evaluation.
 Depends: R (>= 3.5.0)
-Imports: plotrix, shape
+Imports: plotrix, shape, grDevices, graphics, utils
 Suggests: 
     rmarkdown,
     knitr
