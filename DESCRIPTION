@@ -1,12 +1,12 @@
 Package: miscellaneaousPlots
 Type: Package
-Title: Non common plots related to stock assessment, populations dynamics and management strategy evaluation
+Title: Non common plots related to stock assessment, populations dynamics and management strategy evaluation.
 Version: 0.1.0
 Author: c(person("Josymar", "Torrejon-Magallanes", role = c("aut", "cre"), email = "ejosymart@gmail.com"))
 Maintainer: Josymar Torrejon-Magallanes <ejosymart@gmail.com>
-Description: Only for build non common plots: equations, flow charts, etc.
+Description: Only for build non common plots: equations, flow charts, etc, related to stock assessment, populations dynamics and management strategy evaluation.
 Depends: R (>= 3.5.0)
-Imports: graphics, stats, utils
+Imports: plotrix, shape
 Suggests: 
     rmarkdown,
     knitr
