@@ -1,4 +1,28 @@
+# miscellaneousPlots package: Non Common plots --------
 
+#' @importFrom plotrix draw.ellipse
+#' @importFrom Arrows Arrows
+#' @importFrom grDevices integral frac
+#' @importFrom graphics box plot points par abline polygon text lines
+#' @importFrom utils installed.packages
+#' @title Non Common plots.
+#'
+#' @description Build non common plots: equations, flow charts, etc, related to stock assessment, populations dynamics and management strategy evaluation.
+#' @aliases miscellaneousPlots-package miscellaneousPlots
+#' @docType package
+#' @author Josymar Torrejon-Magallanes <ejosymart@@gmail.com>
+#' @details Package: miscellaneousPlots
+#' @details Type: Package
+#' @details Build non common plots: equations, flow charts, etc, related to stock assessment, populations dynamics and management strategy evaluation.
+#'
+#' @examples
+#' #See examples for functions gnomonic() and gnomonicStochastic().
+
+NULL
+#' Equations Population Dynamic and Stock Assessment
+#'
+#' Shows some equations related to Population Dynamic and Stock Assessment.
+#' @export
 eqPDSA <- function(){
   par(mar = c(0,0,0,0), yaxs = "i", xaxs = "i")
   plot(1,1, type = "n", xlim = c(0, 21), ylim = c(0, 20))
@@ -26,9 +50,12 @@ eqPDSA <- function(){
   return(invisible())
 }
 
-
+#' FLBEIA flowchart
+#'
+#' Show all the Management Strategy Evaluation processes.
+#'
+#' @export
 FLEBIAflowchart <- function(){
-  # x11()
   par(yaxs = "i", xaxs = "i", mar = c(0.1,0.1,0.1,0.1))
   plot(x = c(-20, 20), y = c(-40, 25), type="n", main="",
        axes = FALSE, xlab = "", ylab = "")
@@ -79,5 +106,3 @@ FLEBIAflowchart <- function(){
   Arrows(x0 = 15, y0 = -30, x1 = 15, y1 = 7, lwd = 3, arr.type = "triangle")
   text(16, -12, "Implementation Model", font = 4, srt = 90)
 }
-
-
